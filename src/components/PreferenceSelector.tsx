@@ -11,21 +11,21 @@ export const PreferenceSelector = ({ onSelect }: PreferenceSelectorProps) => {
     const preferences = [
         {
             id: "Women",
-            label: "For Her",
-            image: "/products/product_1.png", // Use representative images
-            tagline: "Floral, Elegant, Timeless"
+            label: "Eternal Elegance",
+            image: "/products/product_1.png",
+            tagline: "The presence of timeless grace."
         },
         {
             id: "Men",
-            label: "For Him",
+            label: "Unspoken Power",
             image: "/products/product_11.png",
-            tagline: "Bold, Aromatic, Intense"
+            tagline: "Command the room without a word."
         },
         {
             id: "Unisex",
-            label: "Shared",
+            label: "Universal Allure",
             image: "/products/product_3.png",
-            tagline: "Universal, Woody, Mystical"
+            tagline: "A shared memory, defined by you."
         }
     ] as const;
 

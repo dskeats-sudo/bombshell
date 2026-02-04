@@ -5,6 +5,8 @@ import PerfumeExperience from "@/components/PerfumeExperience";
 import { ProductGrid } from "@/components/ProductGrid";
 import { DesireSection } from "@/components/DesireSection";
 import { PreferenceSelector } from "@/components/PreferenceSelector";
+import { Testimonials } from "@/components/Testimonials";
+import { FinalCTA } from "@/components/FinalCTA";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState<"All" | "Men" | "Women" | "Unisex">("All");
@@ -36,11 +38,17 @@ export default function Home() {
       {/* Desire Lifestyle Section */}
       <DesireSection />
 
-      {/* Entry Choice Section */}
+      {/* Entry Choice Section (The Gateway) */}
       <PreferenceSelector onSelect={handlePreferenceSelect} />
 
-      {/* E-commerce Section */}
+      {/* E-commerce Section (Hidden until selection) */}
       <ProductGrid initialCategory={selectedCategory} />
+
+      {/* Social Proof Section */}
+      <Testimonials />
+
+      {/* Final Conversion Section */}
+      <FinalCTA />
 
       {/* Footer Placeholder */}
       <footer className="bg-neutral-900 text-white/40 py-12 px-6 text-center text-[10px] tracking-[0.3em] uppercase">

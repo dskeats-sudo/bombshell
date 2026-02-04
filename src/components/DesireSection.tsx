@@ -23,12 +23,13 @@ export const DesireSection = () => {
                 >
                     <div className="space-y-8 order-2 md:order-1">
                         <h2 className="text-4xl md:text-7xl font-extralight tracking-[0.2em] uppercase leading-tight italic">
-                            Create <br />
-                            <span className="text-white/40">Desire</span>
+                            The Scent of <br />
+                            <span className="text-white/40">Status</span>
                         </h2>
                         <p className="text-white/60 font-light tracking-wide text-sm md:text-base max-w-md leading-relaxed">
-                            Provocative, magnetic, and undeniably intense.
-                            The unspoken language of attraction, distilled into a single, crystalline essence.
+                            It’s the feeling of a room falling silent as you enter.
+                            The confidence of an aura that speaks before you do.
+                            We don't just sell fragrance—we sell the memory of you.
                         </p>
                         <div className="pt-12">
                             <span className="text-[10px] tracking-[0.4em] uppercase text-white/20">Scroll to explore the collection</span>

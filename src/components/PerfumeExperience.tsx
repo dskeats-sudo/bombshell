@@ -58,28 +58,28 @@ export const PerfumeExperience = () => {
 
     const beats = [
         {
-            title: "Bombshell Intense",
-            subtitle: "The science of obsession.",
+            title: "The Silent Command",
+            subtitle: "Not just a scent, but a presence. Designed to linger in the mind long after you've left the room.",
             range: [0, 0.15] as [number, number],
         },
         {
-            title: "Triple-Distilled Amber",
-            subtitle: "Engineered for 24-hour resonance and depth.",
+            title: "Unforgettable Resonance",
+            subtitle: "A depth that matches your ambition. Engineered to evolve with you through every hour of the night.",
             range: [0.2, 0.4] as [number, number],
         },
         {
-            title: "Precision Atomization",
-            subtitle: "A chaotic, beautiful mist calibrated for perfect skin-adhesion.",
+            title: "The Art of Allure",
+            subtitle: "A precise, invisible edge. The aura of those who dictate the atmosphere.",
             range: [0.45, 0.6] as [number, number],
         },
         {
-            title: "Refined Craftsmanship",
-            subtitle: "Polished marble textures meeting industrial-grade silver hardware.",
+            title: "Defined by Power",
+            subtitle: "Where industrial strength meets pure, distilled elegance. For the few who demand the absolute.",
             range: [0.65, 0.8] as [number, number],
         },
         {
-            title: "A Masterpiece of Scent",
-            subtitle: "— Vogue Collective. Explore the Intense Collection.",
+            title: "Your Legacy, Distilled",
+            subtitle: "Stop being seen. Start being remembered. Explore the Collection defined by intensity.",
             range: [0.85, 0.95] as [number, number],
         },
     ];
