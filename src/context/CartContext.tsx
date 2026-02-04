@@ -19,12 +19,15 @@ interface CartContextType {
     removeFromCart: (itemId: string) => void;
     clearCart: () => void;
     total: number;
+    isCartOpen: boolean;
+    setIsCartOpen: (isOpen: boolean) => void;
 }
 
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [cart, setCart] = useState<CartItem[]>([]);
+    const [isCartOpen, setIsCartOpen] = useState(false);
 
     useEffect(() => {
         const savedCart = localStorage.getItem("bombshell-cart");
@@ -49,6 +52,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
             }
             return [...prev, { id: `${productId}-${type}`, productId, name, type, price, quantity: 1 }];
         });
+        setIsCartOpen(true); // Automatically open cart on add
     };
 
     const removeFromCart = (itemId: string) => {
@@ -60,7 +64,7 @@ export const CartProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const total = cart.reduce((acc, item) => acc + item.price * item.quantity, 0);
 
     return (
-        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, total }}>
+        <CartContext.Provider value={{ cart, addToCart, removeFromCart, clearCart, total, isCartOpen, setIsCartOpen }}>
             {children}
         </CartContext.Provider>
     );
