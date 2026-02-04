@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { RippleButton } from "./magicui/RippleButton";
 
 export const FinalCTA = () => {
     return (
@@ -30,15 +31,16 @@ export const FinalCTA = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.2 }}
                 >
-                    <button
+                    <RippleButton
+                        rippleColor="#ADD8E6"
                         onClick={() => {
                             const element = document.getElementById('collection');
                             if (element) element.scrollIntoView({ behavior: 'smooth' });
                         }}
-                        className="px-12 py-5 bg-white text-black text-xs tracking-[0.4em] uppercase font-bold hover:bg-neutral-200 transition-all hover:tracking-[0.5em]"
+                        className="mx-auto px-12 py-5 bg-white text-black text-xs tracking-[0.4em] uppercase font-bold hover:bg-neutral-200 transition-all hover:tracking-[0.5em]"
                     >
                         Define Your Signature
-                    </button>
+                    </RippleButton>
                     <div className="mt-8 flex justify-center gap-6 opacity-30">
                         <span className="text-[10px] tracking-widest uppercase">Global Shipping</span>
                         <span className="text-[10px] tracking-widest uppercase">Pure Concentration</span>
